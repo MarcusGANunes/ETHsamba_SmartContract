@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-
+import "hardhat/console.sol";
 
 contract nft is ERC721URIStorage {
 
@@ -15,12 +15,12 @@ contract nft is ERC721URIStorage {
 
     constructor() ERC721('JourneyGem', "JGT") {}
 
-    function mint(address to) public {
-      string memory tokenHash = 'QmZaXjPtopoWHD7maEcC7HTjHDXmjwNpRtjY18FpFVSoHP';
+    function mint(address to, string memory tokenHash) public {
       uint256 tokenId = nextTokenId;
       _safeMint(to, tokenId);
       _setTokenURI(tokenId, ipfsHashToURI(tokenHash));
       nextTokenId++;
+      console.log(tokenURI(tokenId));
     }
 
     function getBalance(address owner) public view returns (uint256) {
@@ -28,7 +28,7 @@ contract nft is ERC721URIStorage {
     }
     
     function ipfsHashToURI(string memory ipfsHash) public pure returns (string memory) {
-      return string(abi.encodePacked("https://ipfs.io/ipfs/", ipfsHash));
+      return string(abi.encodePacked("ipfs://", ipfsHash));
     }
 
     function deleteToken(uint256 tokenId) public payable {

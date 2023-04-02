@@ -11,7 +11,7 @@ describe("NFT Test", function() {
 
     const nftDeployed = await nft.deploy()
     
-    await nftDeployed.mint(accountAddress)
+    await nftDeployed.mint(accountAddress, "bafybeihagsgvw7qufxqgz2cz3ftckuzt42wax2n2dwp7p2ato2ieqc7oga/DWL8dLv27EFtiw9XnynBF.jpg")
 
     const balance = await nftDeployed.balanceOf(accountAddress)
     expect(1).to.equal(Number(balance.toString()))
