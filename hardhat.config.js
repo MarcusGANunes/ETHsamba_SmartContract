@@ -15,7 +15,7 @@ task("celo-account", "Prints account address or create a new", async () => {
   fs.existsSync(privateKeyFile) ? console.log(`Address ${Account.getAccount().address}`) : Account.setAccount();
 });
 
-task("celo-deploy", "Prints account address or create a new", async () => {
+task("celo-deploy", "deploy app", async () => {
     const tx = await Deploy.nft();
     console.log(tx);
     console.log(`save the contract address ${tx.contractAddress}`)

@@ -13,13 +13,13 @@ contract nft is ERC721URIStorage {
     string private _name = 'Cristo Redentor';
     string private _symbol = 'RJ';
 
-    constructor() ERC721('NFT', "col") {}
+    constructor() ERC721('JourneyGem', "JGT") {}
 
     function mint(address to) public {
-      string memory tokenURI = 'QmZaXjPtopoWHD7maEcC7HTjHDXmjwNpRtjY18FpFVSoHP';
+      string memory tokenHash = 'QmZaXjPtopoWHD7maEcC7HTjHDXmjwNpRtjY18FpFVSoHP';
       uint256 tokenId = nextTokenId;
       _safeMint(to, tokenId);
-      _setTokenURI(tokenId, tokenURI);
+      _setTokenURI(tokenId, ipfsHashToURI(tokenHash));
       nextTokenId++;
     }
 
