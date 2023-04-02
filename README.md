@@ -1,13 +1,12 @@
-# Sample Hardhat Project
+# Journey Gems
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Functions
 
-Try running some of the following tasks:
+1. ERC721 token creation with NFT on your wallet
+2. Delete image from the collection
+3. Quantity of NFTs stored in user address
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+## Running the project
+
+1. Generate your account on celo wallet with `npx hardhat celo-account`
+2. Deploy the contract with `npx hardhat celo-deploy`
