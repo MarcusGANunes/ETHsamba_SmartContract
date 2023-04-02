@@ -1,3 +1,15 @@
 # Journey Gems
 
-Você já se perguntou como guardar suas memórias de viagem de forma segura e prática? Apresentamos a você Journey Gems - uma coleção única de NFTs que captura os momentos mais preciosos da sua jornada. Cada gem é uma prova criptográfica da sua experiência, registrando os locais que você visitou, as datas que esteve lá e as lembranças que você guardou, isso tudo de forma automática. Com Journey Gems, suas aventuras nunca serão esquecidas. Guarde suas memórias mais valiosas na blockchain, e crie uma coleção de relíquias digitais que durarão para sempre.
+## Funcionalidades
+
+Funções implementadas:
+
+1. ERC721 token creation with NFT on your wallet
+2. Delete image from the collection
+3. Quantity of NFTs stored in user address
+
+## Executando o projeto
+
+1. Gere sua conta na celo wallet com npx hardhat celo-account
+2. Faça o deploy do contrato com npx hardhat celo-deploy
+
