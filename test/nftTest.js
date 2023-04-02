@@ -11,11 +11,10 @@ describe("NFT Test", function() {
 
     const nftDeployed = await nft.deploy()
     
-    await nftDeployed.mint(accountAddress, 'location')
+    await nftDeployed.mint(accountAddress)
 
     const balance = await nftDeployed.balanceOf(accountAddress)
     console.log(balance)
-    console.log(id)
     expect(1).to.equal(Number(balance.toString()))
   })
 })
