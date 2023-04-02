@@ -1,13 +1,3 @@
-# Sample Hardhat Project
+# Journey Gems
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+Você já se perguntou como guardar suas memórias de viagem de forma segura e prática? Apresentamos a você Journey Gems - uma coleção única de NFTs que captura os momentos mais preciosos da sua jornada. Cada gem é uma prova criptográfica da sua experiência, registrando os locais que você visitou, as datas que esteve lá e as lembranças que você guardou, isso tudo de forma automática. Com Journey Gems, suas aventuras nunca serão esquecidas. Guarde suas memórias mais valiosas na blockchain, e crie uma coleção de relíquias digitais que durarão para sempre.
